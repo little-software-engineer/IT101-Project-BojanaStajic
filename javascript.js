@@ -8,12 +8,12 @@ function FunkcijaBojana() {
 
 function myFunction() {
 
-    document.getElementById("merch1").innerText = "travisscott.com";
+    document.getElementById("merch1").innerText = "something.com";
 
 }
 
 function myFunction2() {
-    document.getElementById("merch2").textContent = "theweeknd.com";
+    document.getElementById("merch2").textContent = "something2.com";
 }
 
 function validacijaCV() {
