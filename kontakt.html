@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <h1 style="text-align:center;color: aliceblue;">Kontakt</h1>
+    <h2 style="text-align:center;color: aliceblue;">Bojana Industries</h2>
+    <link rel="stylesheet" href="css.css">
+    <script src="javascript.js"></script>
+    <footer>
+        <p>Ime: Bojana </p>
+        <p>Prezime: Stajić</p>
+        <p>Broj indeksa: 4596</p>
+        <p>Instagram: @stajic_bojana</p>
+    </footer>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="pocetna.html"><i class="Početna Stranica"></i> Početna Stranica</a>
+        <a href="okompaniji.html"><i class="O Kompaniji"></i> O Kompaniji</a>
+        <a href="proizvodi.html"><i class="Proizvodi"></i> Proizvodi</a>
+        <a href="onama.html"><i class="O Nama"></i> O Nama</a>
+        <a href="karijere.html"><i class="Karijere"></i> Karijere</a>
+        <a href="kontakt.html"><i class="Kontakt"></i> Kontakt</a>
+        <a href="demo.html"><i class="Demo"></i> Demo</a>
+    </div>
+
+    <div id="informacije">
+        <h1>Naš telefon: +381 62-5364-31</h1>
+        <h1>Naš mail: bojanaindustries@gmail.com</h1><br>
+
+        <h2>Naša lokacija:</h2>
+        <div class="lokacija">
+            <div class="google mape">
+
+                <iframe width="400" height="400" id="googlemape"
+                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+            </div>
+
+        </div>
+
+
+        <div id="kontaktiranje">
+            <h2 style="color: white;">Kontaktirajte nas!</h2>
+            <form id="kontakt" onsubmit="validateIme(ime); validatePrezime(prezime);">
+                <div class="ime">
+                    <label for="ime" style="color: white;">Ime pošiljaoca:</label><br />
+                    <input id="ime" class="input" name="ime" type="text" required value=""
+                        onchange="proveraBroja(this);" /><br />
+                </div>
+                <div class="prezime">
+                    <label for="prezime" style="color: white;">Prezime pošiljaoca:</label><br />
+                    <input id="prezime" class="input" name="prezime" required type="text" value=""
+                        onchange="proveraBroja(this);" /><br />
+                </div>
+                <div class="telefon">
+                    <label for="telefon" style="color: white;">Broj telefona:</label><br />
+                    <input id="telefon" class="input" name="telefon" required type="number" value=""
+                        onchange="validacijaTelefona(this);" /><br />
+                </div>
+                <div>
+                    <label for="tipPoruke" style="color: white;">Izaberite tip poruke:</label>
+
+                    <select name="tipPoruke" id="tipPoruke" required>
+                        <option value="Poslovna pitanja">Poslovna pitanja</option>
+                        <option value="Recenzija ili vaše iskustvo sa nama">Recenzija ili vaše iskustvo sa nama</option>
+                        <option value="Predlozi kako da se unapredimo i poboljšamo">Predlozi kako da se unapredimo i
+                            poboljšamo
+                        </option>
+                        <option value="Ostalo">Ostalo</option>
+
+                    </select>
+                </div>
+                <div class="naslov">
+                    <label for="naslov" style="color: white;">Naslov poruke:</label><br />
+                    <input id="naslov" class="input" name="naslovPoruke" required type="text" value="" /><br />
+                </div>
+                <div class="tekst">
+                    <label for="tekst" style="color: white;">Tekst poruke:</label><br />
+                    <textarea id="tekst" class="input" name="tekstPoruke"
+                        onchange="duzinaTeksta(this);"></textarea><br />
+                </div>
+
+                <input id="posaljite" type="submit" value="Pošaljite poruku" />
+            </form>
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>

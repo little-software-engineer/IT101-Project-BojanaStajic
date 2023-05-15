@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karijere</title>
+    <h1 style="text-align:center;color: aliceblue;">Karijere</h1>
+    <h2 style="text-align:center;color: aliceblue;">Bojana Industries</h2>
+    <link rel="stylesheet" href="css.css">
+    <script src="javascript.js"></script>
+    <footer>
+        <p>Ime: Bojana </p>
+        <p>Prezime: Stajić</p>
+        <p>Broj indeksa: 4596</p>
+        <p>Instagram: @stajic_bojana</p>
+    </footer>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="pocetna.html"><i class="Početna Stranica"></i> Početna Stranica</a>
+        <a href="okompaniji.html"><i class="O Kompaniji"></i> O Kompaniji</a>
+        <a href="proizvodi.html"><i class="Proizvodi"></i> Proizvodi</a>
+        <a href="onama.html"><i class="O Nama"></i> O Nama</a>
+        <a href="karijere.html"><i class="Karijere"></i> Karijere</a>
+        <a href="kontakt.html"><i class="Kontakt"></i> Kontakt</a>
+        <a href="demo.html"><i class="Demo"></i> Demo</a>
+    </div>
+
+    <div class="poslovi1">
+        <p style="color: rgb(243, 237, 237); float: left;">
+        <h1>Kreativni asistent</h1>
+        <b> -Iskustvo sa kalendarom na izvršnom nivou<br>
+            -Iskustvo sa međunarodnom/domaćom koordinacijom putovanja<br>
+            -Iskustvo sa proizvodima Microfost Office-a <br>
+            -2+ Godine profesionalnog iskustva<br>
+            -Iskustvo sa radom u Adobe Photoshop-u <br>
+            -Iskustvo sa korišćenjem socijalnih mreža<br></b>
+
+        <br> <b>Tražimo dinamičnog, motivisanog kreativnog asistenta da podrži Originals tim dok razvijaju serije i
+            nadgledaju
+            produkcije. Pomoćićete timu da nadogradi svoj rani uspeh, pomažući u definisanju sledeće generacije kako
+            i
+            šta
+            publika gleda. Tražimo kreativnu, stratešku i administrativno veštu osobu sa strašću prema TV-u i filmovima
+            koja
+            uspeva u izuzetno saradničkom okruženju, ali joj je takođe ugodno da radi samostalno.</b>
+        </p>
+    </div>
+    <div class="poslovi2">
+        <p style="color: rgb(255, 255, 255); font-size: large;">
+
+        <h1>Programer</h1>
+        <br><b>Programiranje obrađuje svakodnevno raspoređivanje sadržaja na našim mrežama; to uključuje kratkoročno i
+            dugoročno planiranje linearnih događaja i događaja sa više platformi, kaskadera i / ili maratona. Osim
+            linearnih,
+            tim za programsku strategiju planira i zakazuje sadržaj na svim platformama na kojima se naš sadržaj može
+            naći:
+            aplikacije, na mreži, Video-on-Demand (VOD), Snapchat itd. Pored toga, oni se bave odnosima sa produkcijskim
+            kompanijama.Obezbedite originalni i stečeni sadržaj i obezbedite da je sav sadržaj isporučen i spreman za
+            emitovanje.</b>
+
+
+        </p>
+    </div>
+    <div class="poslovi3">
+        <p style="color: aliceblue; font-size: large;">
+        <h1>Licenciranje medija i muzike</h1>
+        <br><b>Licenciranje muzike i medija pregovara o troškovima i osigurava prava za muziku i druge medije koji se
+            koriste u
+            programiranju. Oni istražuju i pregledavaju informacije o vlasništvu autorskih prava, izrađuju i pripremaju
+            ugovore
+            o licenciranju muzike za izvršenje i analiziraju informacije o programskim pravima za interne i eksterne
+            klijente.</b>
+
+
+
+
+
+        </p>
+    </div>
+
+
+
+    <div class="cv">
+        <form class="form" id="forma" name="forma" onsubmit="return(validacijaCV());">
+            <h1 style="color: white;">Predajte vaš CV!(Popunite formu ispod)</h1>
+            <div>
+                <label for="ime" style="color: white;">Ime: </label>
+                <input type="text" name="Ime" id="ime" value="" />
+            </div><br>
+            <div>
+                <label for="prezime" style="color: white;">Prezime: </label>
+                <input type="text" name="Prezime" id="prezime" value="" />
+            </div><br>
+            <div>
+                <label for="mail" style="color: white;">Mail adresa: </label>
+                <input type="text" name="MailAdresa" id="mail" value="" />
+            </div><br>
+            <div>
+                <label for="broj telefona" style="color: white;">Broj telefona: </label>
+                <input type="number" name="BrojTelefona" id="broj telefona" value=""
+                    onchange="validacijaTelefona(this);" />
+            </div><br>
+            <div>
+                <label for="radno iskustvo" style="color: white;">Radno iskustvo: </label>
+                <input type="text" name="RadnoIskustvo" id="radno iskustvo" value="" />
+            </div><br>
+            <div>
+                <label for="poslovi" style="color: white;">Odaberite posao:</label>
+
+                <select name="poslovi" id="poslovi">
+                    <option value=""></option>
+                    <option value="Kreativni asistent">Kreativni asistent</option>
+                    <option value="Programer">Programer</option>
+                    <option value="Licenciranje medija i muzike">Licenciranje medija i muzike</option>
+
+                </select>
+            </div><br>
+            <div>
+                <label for="obrazovanje" style="color: white;">Obrazovanje: </label>
+                <input type="text" name="Obrazovanje" id="obrazovanje" value="" />
+            </div><br>
+
+            <div>
+                <label for="strani jezici" style="color: white;">Strani jezici: </label>
+                <input type="text" name="StraniJezici" id="strani jezici" value="" />
+            </div><br>
+
+            <div>
+                <label for="hobiji" style="color: white;">Hobiji/Lične osobine: </label>
+                <textarea id="hobiji" class="input" name="hobiji"></textarea><br />
+            </div><br>
+
+            <div>
+                <input type="submit" value="Predaj CV">
+            </div>
+
+
+            <hr>
+
+
+
+            <hr>
+
+
+
+
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
